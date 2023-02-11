@@ -64,15 +64,15 @@ class App extends Component {
       showModal: true,
       bigImage: image,
     });
-    console.log('Opened modal');
   };
+
   closeModal = () => {
     this.setState({
       showModal: false,
       bigImage: '',
     });
-    console.log('Closed modal');
   };
+
   render() {
     const { searchWord, page, pics, isLoading, showModal, bigImage } =
       this.state;
